@@ -78,7 +78,10 @@ resource "aws_instance" "task_manager" {
               docker run -d -p 3000:80 --name task-container task-manager
               EOF
   
-  tags = {
-    Name = "task-manager-terraform"
+   tags = {
+    Project     = "terraform-docker"
+    Environment = "TEST"
+    ManagedBy   = "terraform"
+    Name        = "task-manager-ec2"
   }
 }
