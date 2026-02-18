@@ -1,1 +1,1 @@
-key_name = "1234"
+key_name = "your-keypair-name"
